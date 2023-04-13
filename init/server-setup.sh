@@ -21,8 +21,10 @@ cd ~
 
 # Minecraft setting
 
+apt install openjdk-17-jre
+
 cd ~/Minecraft
-mkdir spigot craftBukkit bukkit
+mkdir spigot
 cd spigot
 cd ~
 
@@ -39,7 +41,14 @@ cd ~
 
 cd ~
 git clone https://github.com/Young-TW/Discord-Bot.git
-cd discordpy
-vim setting.json
+cd Discord-Bot/discordpy
 python3 ubuntuserverbot.py
 cd ~
+
+# install no-ip duc
+
+cd /usr/local/src/
+wget http://www.noip.com/client/linux/noip-duc-linux.tar.gz
+tar xf noip-duc-linux.tar.gz
+cd noip-2.1.9-1/
+make install
