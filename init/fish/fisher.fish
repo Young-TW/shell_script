@@ -1,7 +1,5 @@
 #!/bin/fish
 
-set fisher_packages (jorgebucaran/fisher,IlanCosman/tide@v5,jorgebucaran/autopair.fish,nickeb96/puffer-fish)
-
-for i in fisher_packages
-  eval "fisher install ${fisher_packages[i]}"
+for i in "jorgebucaran/fisher" "IlanCosman/tide@v5" "jorgebucaran/autopair.fish" "nickeb96/puffer-fish"
+  eval "fisher install $i"
 end
