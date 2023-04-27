@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~
+cd ~ || exit
 mkdir Code Desktop Document Music Picture Software Video
 
 # install git
@@ -14,10 +14,10 @@ git config --global user.email young20050727@gmail.com
 
 # install paru
 
-cd ~/Software
+cd ~/Software || exit
 sudo pacman -S --needed base-devel
 git clone https://aur.archlinux.org/paru.git
-cd paru
+cd paru || exit
 makepkg -si
 
 # install packages from paru

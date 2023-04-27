@@ -2,10 +2,10 @@
 
 # install cmake-init
 
-cd ~/Software
+cd ~/Software || exit
 git clone https://github.com/Young-TW/cmake-init.git
-cd cmake-init
+cd cmake-init || exit
 cmake . -B build
 cmake --build build --config RELEASE
 cmake --install build
-cd ~
+cd ~ || exit
